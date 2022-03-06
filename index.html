@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body onclick="jump()">
+
+    <br />
+
+    <div class="container">
+        <div class="game">
+            <div id="character"></div>
+            <div id="block"></div>
+            <div id="coin"></div>
+        </div>
+
+        <div class="info">
+            <p>Score: <span id="scoreSpan"></span></p><br />
+            <p>Best Score: <span id="bestScore"></span></p><br />
+            <p>Lives: <span id="lives"></span></p>
+            </p><br />
+            <p>Coins: <span id="p-coins"></span></p>
+            <br />
+
+            <div class="levels">
+                <label class="labelLevels">Level 1 (<span id="score1">0</span>-104): <b id="lvl1">Not Done
+                        :(</b></label><br />
+                <label class="labelLevels">Level 2 (<span id="score2">100</span>-189): <b id="lvl2">Not Done
+                        :(</b></label><br />
+                <label class="labelLevels">Level 3 (<span id="score3">189</span>-258): <b id="lvl3">Not Done
+                        :(</b></label><br />
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p class="instructions"><b>Click to jump</b></p>
+    <p class="instructions"><b>Collect the coins</b></p>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

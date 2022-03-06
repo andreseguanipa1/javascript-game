@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    width: 50%;
+    height: 600px;
+    border: 1px solid black;
+    margin-right: 10%;
+    float: left;
+    position: relative;
+}
+
+.info{
+    width: 30%;
+    position: relative;
+    float: left;
+}
+
+#character{
+    z-index: 5;
+    width: 50px;
+    height: 100px;
+    background-color: rgb(59, 59, 59);
+    position:relative;
+    top: 500px;
+}
+
+.animate{
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump{
+    0%{top: 450px;}
+    30%{top: 440px;}
+    70%{top: 440px;}
+    100%{top: 450px;}
+}
+
+#block{
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: 450px;
+    left: 100%;
+    animation: block 2s infinite linear;
+}
+
+#coin{
+    z-index: 3;
+    background-color: rgb(251, 255, 0);
+    border: 1px solid rgb(105, 107, 0);
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 100%;
+    position: relative;
+    top: 420px;
+    left: 100%;
+    animation: coin 2.2s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 100%}
+    100%{left: -40px}
+}
+
+@keyframes coin{
+    0%{left: 100%}
+    100%{left: -100px}
+}
+
+p{
+    font-size: 130%;
+}
+
+.instructions{
+    text-align: center;
+}
+
+label {
+    font-size: 140%;
+}
+
+@media only screen and (max-width:1048px) {
+
+    .container{
+        width: 97%;
+    }
+
+    .game{
+        margin-right: 3%;
+        width: 50%;
+    }
+
+    label {
+        font-size: 120%;
+    }
+
+    p{
+        font-size: 110%;
+    }
+
+}
+
+@media only screen and (max-width:925px) {
+
+    .game{
+        margin-top: 40px;
+        width: 70%;
+        position: absolute;
+        float: none;
+    }
+    
+    .info{
+        margin-top: 80px;
+        width: 40%;
+        position: absolute;
+        float: none;
+    }
+    
+}
+
+@media only screen and (max-width:675px) {
+
+    .game{
+        width: 85%;
+    }
+    
+    .info{
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width:451px) {
+
+    .info{
+        width: 75%;
+    }
+
+    label {
+        font-size: 108%;
+    }
+    
+}
+
+@media only screen and (max-width:330px) {
+
+    .game{
+        width: 90%;
+    }
+
+    label {
+        font-size: 95%;
+    }
+    
+}
